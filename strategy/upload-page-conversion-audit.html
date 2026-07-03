@@ -3,564 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SeekerScore.com — Critical Product Audit</title>
+<title>SeekerScore.com — Conversion Audit & Action Plan</title>
 <style>
   :root { --bg: #0f1117; --card: #1a1d27; --border: #2a2d3a; --purple: #7c3aed; --green: #10b981; --red: #ef4444; --orange: #f59e0b; --text: #e2e8f0; --muted: #94a3b8; --white: #fff; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; padding: 2rem; max-width: 1100px; margin: 0 auto; }
-  h1 { font-size: 2rem; color: var(--white); margin-bottom: 0.5rem; }
-  h2 { font-size: 1.5rem; color: var(--purple); margin: 2.5rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
-  h3 { font-size: 1.15rem; color: var(--green); margin: 1.5rem 0 0.5rem; }
-  h4 { font-size: 1rem; color: var(--orange); margin: 1rem 0 0.4rem; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; padding: 2rem; max-width: 1000px; margin: 0 auto; }
+  .eyebrow { color: var(--purple); font-weight: 700; letter-spacing: 0.08em; font-size: 0.85rem; margin-bottom: 0.5rem; }
+  h1 { font-size: 1.9rem; color: var(--white); margin-bottom: 0.5rem; }
+  .byline { color: var(--muted); font-size: 0.95rem; margin-bottom: 0.25rem; }
+  .subtitle { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+  h2 { font-size: 1.3rem; color: var(--purple); margin: 2.5rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+  h3 { font-size: 1.05rem; color: var(--green); margin: 0 0 0.75rem; }
   p, li { margin-bottom: 0.6rem; }
   ul, ol { padding-left: 1.5rem; }
-  .subtitle { color: var(--muted); font-size: 1rem; margin-bottom: 2rem; }
   .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; margin: 1rem 0; }
   .severity-critical { border-left: 4px solid var(--red); }
   .severity-high { border-left: 4px solid var(--orange); }
   .severity-medium { border-left: 4px solid #3b82f6; }
-  .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; margin-right: 4px; }
-  .tag-red { background: rgba(239,68,68,0.2); color: var(--red); }
-  .tag-orange { background: rgba(245,158,11,0.2); color: var(--orange); }
-  .tag-blue { background: rgba(59,130,246,0.2); color: #3b82f6; }
-  .tag-green { background: rgba(16,185,129,0.2); color: var(--green); }
-  .tag-purple { background: rgba(124,58,237,0.2); color: var(--purple); }
-  .verdict { font-size: 1.1rem; font-weight: 600; padding: 1rem; border-radius: 8px; margin: 1rem 0; }
-  .verdict-negative { background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); color: var(--red); }
-  .verdict-mixed { background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.3); color: var(--orange); }
-  .verdict-positive { background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); color: var(--green); }
   table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
-  th, td { padding: 0.6rem; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+  th, td { padding: 0.6rem; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.9rem; vertical-align: top; }
   th { color: var(--purple); font-weight: 600; }
-  .hypothesis { margin-bottom: 1.5rem; }
-  .hypothesis-title { font-weight: 700; color: var(--white); margin-bottom: 0.3rem; }
   hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
-  .toc { background: var(--card); padding: 1.25rem; border-radius: 10px; margin: 1.5rem 0; }
-  .toc a { color: var(--purple); text-decoration: none; }
-  .toc a:hover { text-decoration: underline; }
-  .finding { padding: 0.75rem 1rem; margin: 0.5rem 0; border-radius: 6px; }
-  .finding-bug { background: rgba(239,68,68,0.08); border-left: 3px solid var(--red); }
-  .finding-issue { background: rgba(245,158,11,0.08); border-left: 3px solid var(--orange); }
-  .finding-note { background: rgba(59,130,246,0.08); border-left: 3px solid #3b82f6; }
   code { background: rgba(124,58,237,0.15); padding: 1px 5px; border-radius: 3px; font-size: 0.85em; }
+  .signature { color: var(--muted); margin-top: 2rem; font-size: 0.85rem; }
 </style>
 </head>
 <body>
 
-<h1>SeekerScore.com — Critical Product Audit</h1>
-<p class="subtitle">Full user-journey audit conducted April 16, 2026 &middot; Auditing why a reviewer might say "generic" and "limited customization"</p>
+<div class="eyebrow">SEEKER | CAREER ROUTING ENGINE</div>
+<h1>SeekerScore.com — Conversion Audit &amp; Action Plan</h1>
+<p class="byline">Prepared by Carlos Munoz &nbsp;|&nbsp; Marketing Strategy &amp; Growth Analytics Lead &nbsp;|&nbsp; Seeker</p>
+<p class="subtitle">Full user-journey audit conducted April 16, 2026, via live browsing session. Diagnosing why a first-time reviewer would call the product "generic" with "limited customization."</p>
 
-<div class="toc">
-<strong>Contents</strong><br>
-<a href="#phase1">Phase 1: First Impression (0–10s)</a> ·
-<a href="#phase2">Phase 2: Value Prop vs. Perceived Product</a> ·
-<a href="#phase3">Phase 3: Layer-by-Layer Journey</a> ·
-<a href="#phase4">Phase 4: Customization Audit</a> ·
-<a href="#phase5">Phase 5: Generic Perception Analysis</a> ·
-<a href="#phase6">Phase 6: Differentiation Landing</a> ·
-<a href="#phase7">Phase 7: Hypotheses</a> ·
-<a href="#phase8">Phase 8: Severity Ranking</a> ·
-<a href="#phase9">Phase 9: High-Leverage Fixes</a>
-</div>
+<p>Seeker is more technically sophisticated than it appears on first look: live multi-source job matching, three-axis scoring, seniority calibration, and search transparency all exist today. None of that shows up before a visitor has already mentally filed the product as "another resume scanner." The fixes below are presentation-layer, not backend work, and require no changes to the matching or scoring logic.</p>
 
 <hr>
 
-<!-- ============ PHASE 1 ============ -->
-<h2 id="phase1">Phase 1: First Impression Audit (0–10 Seconds)</h2>
+<h2>The Fix: Four Objectives</h2>
 
-<h3>What I think this product does within 5 seconds</h3>
-<p>"It scores my resume." That's it. The headline reads <em>"You're applying to jobs you're not getting — Find out why"</em> and the primary CTA is <em>"Analyze your resume, free."</em> The sub-headline tries to differentiate — "Other tools score keywords. Seeker matches you against live openings" — but it reads as a refinement of the same category, not a new one. Within 5 seconds, my mental model is: <strong>resume scoring tool with job matching</strong>.</p>
-
-<h3>Category placement</h3>
-<p>I'd place this squarely in the <strong>"AI resume scanner/optimizer"</strong> category alongside Jobscan, Resume Worded, Teal, Kickresume, and dozens of others. The dark-theme aesthetic, the prominent score number, and the "upload → get results" funnel all reinforce this classification.</p>
-
-<h3>What other tools does it resemble?</h3>
-<ul>
-  <li><strong>Jobscan</strong> — upload resume, get score, see keyword gaps</li>
-  <li><strong>Resume Worded</strong> — upload resume, get score breakdown, improvement tips</li>
-  <li><strong>Teal</strong> — resume analysis with job matching features</li>
-  <li><strong>LinkedIn's "How You Match" feature</strong> — compares profile to job listings</li>
-</ul>
-
-<h3>Does it feel differentiated immediately?</h3>
-<div class="verdict verdict-negative">No. The first impression is indistinguishable from the resume-scanner category it explicitly positions against.</div>
-<p>The irony: the product's own Compare page argues "resume scanners tell you if your font is parseable — Seeker tells you where you'd actually get hired." But the homepage <em>looks and feels</em> like those scanners. The dark theme, the score numbers, the upload funnel, the "0+ resumes analyzed" social proof counter (which currently reads zero, undermining credibility) — all of these are visual cues borrowed from the exact category Seeker claims to transcend.</p>
-
-<h3>What makes it blend in</h3>
-<ul>
-  <li>The hero headline pattern ("You're doing X wrong → we fix it") is the standard resume-tool playbook</li>
-  <li>The purple-on-dark color scheme with gradient accents is the current SaaS/AI aesthetic default</li>
-  <li>The "analyze in 60 seconds" promise is the standard speed claim</li>
-  <li>The "no account required" is common across free-tier resume tools</li>
-  <li>Product Hunt / NextGen Tools badges signal "indie tool" rather than "established platform"</li>
-</ul>
-
-<hr>
-
-<!-- ============ PHASE 2 ============ -->
-<h2 id="phase2">Phase 2: Value Proposition vs. Perceived Product</h2>
-
-<h3>What the product claims to do</h3>
-<p>Per the homepage and How It Works page, Seeker claims to be a <strong>"career intelligence"</strong> tool that:</p>
-<ul>
-  <li>Matches your resume against live job openings from multiple sources (Adzuna, USAJobs, Remotive, Jobicy, Jooble)</li>
-  <li>Scores fit across three dimensions: skill alignment, domain fit, seniority calibration</li>
-  <li>Shows your market position (percentile ranking) among peers</li>
-  <li>Identifies specific skill gaps per matched role</li>
-  <li>Provides career trajectory analysis</li>
-  <li>Offers search transparency (shows how it searched)</li>
-</ul>
-
-<h3>What it appears to do from the outside</h3>
-<p>"Upload resume → get a score and some job matches." The nuance of multi-source aggregation, seniority calibration, domain fit weighting, and career trajectory analysis is invisible at the marketing surface level. A first-time visitor forms the mental model of a <strong>one-shot resume analyzer</strong>.</p>
-
-<h3>The mismatch</h3>
-<div class="card severity-high">
-<h4>The product is significantly more advanced than it appears</h4>
-<p>Based on the How It Works page content, Seeker actually does several things that competitors don't:</p>
-<ul>
-  <li><strong>Multi-source live job aggregation</strong> across 5+ job APIs — this is NOT what resume scanners do</li>
-  <li><strong>Seniority calibration</strong> — automatically detecting career level and filtering noise</li>
-  <li><strong>Domain fit scoring</strong> — weighting industry experience, not just keyword overlap</li>
-  <li><strong>Search transparency</strong> — showing how many openings were evaluated and the search strategy used</li>
-  <li><strong>Career trajectory view</strong> — forward-looking career path analysis</li>
-</ul>
-<p>None of this is communicated on the homepage. The homepage reduces the product to "score + matches" — the exact same frame as every competitor.</p>
-</div>
-
-<h3>Where the product undersells itself</h3>
-<ul>
-  <li><strong>The "live market matching" concept is buried</strong> — the homepage says it once in a subheadline, but the visual language (score numbers, upload funnel) screams "scanner"</li>
-  <li><strong>"Career intelligence" appears only on the upload page header</strong> — not on the homepage</li>
-  <li><strong>The three-axis scoring model (skill + domain + seniority) never appears on the homepage</strong> — it's explained only in How It Works</li>
-  <li><strong>The multi-source job aggregation is invisible</strong> — a user would need to read the How It Works page to learn that Seeker searches across Adzuna, USAJobs, Remotive, Jobicy, and Jooble</li>
-  <li><strong>Search transparency is never previewed</strong> — this is genuinely unique and is completely hidden until post-analysis</li>
-</ul>
-
-<hr>
-
-<!-- ============ PHASE 3 ============ -->
-<h2 id="phase3">Phase 3: Layer-by-Layer Journey Audit</h2>
-
-<!-- Layer A -->
-<h3>Layer A: Pre-Auth / Marketing Surface</h3>
-
-<h4>Pages reviewed</h4>
-<p>Homepage (<code>/</code>), How It Works (<code>/how-it-works</code>), Compare (<code>/compare</code>), Pricing (<code>/pricing</code>), Demo (<code>/demo</code>)</p>
-
-<h4>What the product is promising</h4>
-<p>Free, fast, private resume analysis against real job openings. Market positioning, skill gaps, and role matches in 60 seconds with no account required.</p>
-
-<h4>What feels generic</h4>
-<ul>
-  <li>The headline pattern ("You're applying to jobs you're not getting")</li>
-  <li>The purple/dark visual theme — indistinguishable from dozens of AI tools</li>
-  <li>The hero metrics display (score %, roles matched, top match %) — this is the exact layout pattern of Jobscan, Resume Worded, etc.</li>
-  <li>The FAQ section — standard questions, standard answers</li>
-  <li>The "0+ resumes analyzed" counter showing zero</li>
-  <li>Product Hunt / NextGen Tools / TinyLaunch badges suggesting a very early-stage product</li>
-</ul>
-
-<h4>What feels differentiated</h4>
-<ul>
-  <li>The Compare page is excellent — specific, concrete comparisons against LinkedIn Premium, Indeed, and Resume Scanners with a feature matrix</li>
-  <li>The phrase "Not a score — a plan" on the homepage sample results</li>
-  <li>The "Resume deleted after analysis" privacy commitment (repeated consistently)</li>
-  <li>The sample match card showing specific gap analysis per role ("Missing: Kubernetes experience and observability tooling")</li>
-</ul>
-
-<h4>What expectations are set before signup</h4>
-<p>The user expects to upload a resume and get back a score and some job matches. The expectation is for a <strong>one-shot tool</strong>, not an ongoing intelligence platform. This sets up the "limited customization" perception because the user is primed for a single-use interaction.</p>
-
-<div class="finding finding-bug"><strong>BUG:</strong> The homepage has a massive rendering void — multiple full viewport-heights of black space between the hero and the FAQ/CTA sections. Content exists in the DOM (confirmed via text extraction) but renders as dead space visually. This creates a "broken page" impression for users who scroll past the first fold.</div>
-
-<!-- Layer B -->
-<h3>Layer B: Auth / Account Creation</h3>
-
-<h4>Sign-up flow</h4>
-<p>Sign-up (<code>/sign-up</code>) offers Google, GitHub, or email/password. Clean and simple. The page says: "Save your results, track your resume history, and unlock Pro features."</p>
-
-<h4>Does the product earn the signup?</h4>
-<div class="verdict verdict-mixed">Partially. The "no account required" messaging is strong and reduces friction for first use. But the account creation page gives no preview of what the dashboard looks like, what "resume history" tracking means, or what Pro features feel like in practice.</div>
-
-<h4>Friction and confusion points</h4>
-<div class="finding finding-bug"><strong>BUG:</strong> The "Sign In" nav link navigates to <code>/sign-in</code> (with hyphen), but if a user types <code>/signin</code> (no hyphen) — which is a natural guess — they get a 404. The 404 page shows no path to the correct sign-in page.</div>
-<p>The sign-up page offers GitHub as an auth option. This is unusual for a career/resume tool and signals "developer audience" — potentially confusing for non-technical job seekers who form the broader target market.</p>
-
-<!-- Layer C -->
-<h3>Layer C: Post-Auth Initial Experience</h3>
-<p><em>Note: Could not fully test post-auth experience due to file upload sandbox restrictions. Analysis based on the demo page (<code>/demo</code>) which mirrors the results experience.</em></p>
-
-<h4>What the demo reveals about the results experience</h4>
-<p>The demo shows a "Sample Resume Analysis" for a mid-level marketing professional with two tabs: <strong>Matches</strong> and <strong>Insights</strong>. The Matches tab is the default and primary view.</p>
-
-<h4>Does the product feel more differentiated after login?</h4>
-<div class="verdict verdict-mixed">Yes — the results page is substantially more sophisticated than the homepage suggests. But you have to get there first, and the demo is the only way to see it without uploading. The demo is tucked behind a secondary CTA ("Preview the analysis first") that most users will skip.</div>
-
-<div class="finding finding-issue"><strong>UX ISSUE:</strong> The "Insights" tab in the demo is non-functional — clicking it doesn't switch the view. This either means the Insights view doesn't exist in the demo, or it's broken. Either way, the user can't preview a key differentiating feature (career trajectory, search transparency) before uploading.</div>
-
-<!-- Layer D -->
-<h3>Layer D: Upload Flow</h3>
-
-<h4>The upload page (<code>/upload</code>)</h4>
-<p>This is actually the best-designed page on the site. It shows:</p>
-<ul>
-  <li>Auto-detected location targeting ("Targeting: Sunnyvale, CA") with a "Change" option</li>
-  <li>"Also include remote roles" toggle (on by default)</li>
-  <li>File upload area (PDF or Word, 5 MB max)</li>
-  <li>Right sidebar preview showing what results look like (score, top matches, biggest gap)</li>
-  <li>Trust signals: free, no account, deleted after analysis, ~60 sec</li>
-</ul>
-
-<h4>What choices does the user have before analysis?</h4>
-<p>Only two: <strong>location</strong> and <strong>include remote roles toggle</strong>. That's it.</p>
-
-<h4>What's missing that would increase perceived customization</h4>
-<ul>
-  <li>No ability to specify target role/title (e.g., "I'm looking for Senior PM roles")</li>
-  <li>No ability to specify target industry or domain</li>
-  <li>No salary range preference</li>
-  <li>No experience level preference or override</li>
-  <li>No ability to specify which skills to prioritize</li>
-  <li>No ability to exclude certain job types or companies</li>
-</ul>
-
-<h4>Why "limited customization" gets said at this stage</h4>
-<p>The upload flow is a two-input funnel: drop file, pick city. The user has zero ability to shape <em>what kind of analysis</em> they want. The system infers everything. This is technically sophisticated (the product auto-detects seniority, domain, etc.) but <em>perceptually</em> it feels like the user has no control.</p>
-
-<div class="finding finding-bug"><strong>BUG:</strong> File upload fails silently for files near the 5MB limit. The error message is just "Upload failed" — no file size hint, no HTTP status code, no actionable guidance. The error recovery is a bare "Upload New File" button with no explanation. (Root cause likely: Vercel's 4.5MB body limit vs the client-side 5MB limit, causing a silent 413 rejection.)</div>
-
-<!-- Layer E -->
-<h3>Layer E: Results / Output Experience (via Demo)</h3>
-
-<h4>What the results show</h4>
-<p>The demo results page displays:</p>
-<ul>
-  <li><strong>Header metrics:</strong> Market Position (Top 31%), Roles Matched (8 from 4,200 live openings), Resume Readiness (78%)</li>
-  <li><strong>Position/Strength/Gap summary:</strong> Three-sentence narrative about the user's positioning</li>
-  <li><strong>Your Strengths:</strong> Skill tags extracted from the resume</li>
-  <li><strong>Top Matches (5 of 8):</strong> Cards with company name, title, fit %, match reason, skill gaps, apply link, and ATS readiness score per role</li>
-  <li><strong>Priority Skill Gaps:</strong> Skills ranked by how many matches require them</li>
-</ul>
-
-<h4>Does the output feel generic or distinct?</h4>
-<div class="verdict verdict-positive">The actual results content is the most differentiated part of the product. Match cards with per-role ATS readiness scores, specific gap callouts, and apply links are genuinely useful and not something Jobscan or Resume Worded provide. The narrative summary (Position/Strength/Gap) is personalized and specific.</div>
-
-<h4>But the results are static and non-interactive</h4>
-<ul>
-  <li>No visible filters to sort/filter matches by location, score threshold, domain, or company size</li>
-  <li>No ability to drill into a specific match card for deeper analysis</li>
-  <li>No ability to say "show me more like this one" or "exclude this type of role"</li>
-  <li>No ability to re-run analysis with different parameters</li>
-  <li>No ability to compare "what if I added Kubernetes to my resume" scenarios</li>
-  <li>"Showing 5 of 8" with "3 more matches available in full analysis" — but no way to unlock them without Pro</li>
-  <li>The Insights tab (career trajectory, search transparency) exists but is not functional in the demo</li>
-</ul>
-
-<h4>Post-result experience depth</h4>
-<p>The results page is a <strong>read-only report</strong>. There are no interactive controls, no refinement options, no "what-if" capabilities, and no follow-up actions beyond "Apply link" and "Analyze your resume" CTA. This is where the product stops being a live intelligence tool and becomes a static document — directly feeding the "generic one-shot analyzer" perception.</p>
-
-<hr>
-
-<!-- ============ PHASE 4 ============ -->
-<h2 id="phase4">Phase 4: Customization Audit</h2>
-
-<h3>Visible customization across the entire journey</h3>
 <table>
-  <tr><th>Stage</th><th>What can be controlled</th><th>What's missing</th></tr>
-  <tr><td>Upload</td><td>Location (city), Remote toggle</td><td>Target role, industry, seniority override, salary, company preferences</td></tr>
-  <tr><td>Analysis</td><td>Nothing — fully automated</td><td>Any parameter at all</td></tr>
-  <tr><td>Results</td><td>Nothing visible — no filters, no sort, no drill-down</td><td>Score filter, domain filter, location filter, "more like this," skill priority weighting</td></tr>
-  <tr><td>Follow-up</td><td>Apply links</td><td>Save/bookmark roles, track applications, compare versions, "what-if" skill scenarios</td></tr>
-</table>
-
-<h3>Why "limited customization" is an accurate perception</h3>
-<p>The total user-controllable surface is: <strong>one location field and one toggle</strong>. Everything else is inferred. The system may do this inference brilliantly, but the user never sees or validates those inferences. They can't say "I'm targeting Principal Engineer roles specifically" or "I want to stay in fintech" or "I'd take a pay cut for remote." The system decides what matters, and the user either accepts the output or doesn't.</p>
-
-<p>This is the core tension: <strong>Seeker's sophistication is entirely internal</strong>. The user's experience of that sophistication is passive receipt of a static report. The product does the thinking; the user just watches.</p>
-
-<h3>What customization is technically present but invisible</h3>
-<p>Based on the How It Works page, the system internally handles:</p>
-<ul>
-  <li>Automatic seniority detection and filtering</li>
-  <li>Domain fit weighting based on industry experience</li>
-  <li>Automatic search expansion if local market is thin</li>
-  <li>Multi-source aggregation with daily refresh</li>
-</ul>
-<p>All of these are real customization mechanisms — but they happen invisibly. The user never sees "We detected you as a Senior-level candidate" or "We expanded your search to remote roles because San Jose had limited matches." The intelligence is hidden.</p>
-
-<hr>
-
-<!-- ============ PHASE 5 ============ -->
-<h2 id="phase5">Phase 5: Generic Perception Analysis</h2>
-
-<h3>Why someone would say "This tool feels generic"</h3>
-
-<h4>Visual design</h4>
-<p>Dark theme with purple accents on a black background. Gradient text. Card-based layout. This is the 2024–2026 default SaaS aesthetic. It looks like every AI tool launched in the last two years. Nothing about the visual design signals "career intelligence platform" vs "resume scanner" vs "AI writing tool."</p>
-
-<h4>Category cues</h4>
-<p>The product is covered in resume-scanner signifiers: a prominent score number (64/100 on upload page, 78% on demo), an upload funnel, "analyze your resume" as the primary action, "skill gaps" as the key output concept. These cues place the product into the most crowded subcategory of career tools.</p>
-
-<h4>Copywriting</h4>
-<p>The homepage copy follows the standard problem-agitate-solve formula: "You're applying to jobs you're not getting → Other tools score keywords → We match you against live openings." The differentiator is stated once in a subheadline that's easy to miss. The rest of the copy uses generic career-tool vocabulary: "score," "gaps," "matches," "analysis." The word "intelligence" appears only on the upload page.</p>
-
-<h4>CTA language</h4>
-<p>"Analyze your resume, free" — functionally identical to every resume scanner CTA. "See where you stand" — generic. "Try with your resume" — generic. None of these CTAs communicate what makes Seeker different from Jobscan.</p>
-
-<h4>User flow structure</h4>
-<p>Upload → wait → static results. This is the identical interaction model of every resume scanner on the market. There's no conversation, no iteration, no progressive refinement, no user agency after upload. The flow is a one-way pipeline that positions the product as a disposable tool rather than an ongoing platform.</p>
-
-<h4>Post-auth interaction model</h4>
-<p>Read-only. The results page is a document, not an interface. No filters, no controls, no "what next" beyond apply links and a paywall tease. The post-result experience ends abruptly — there's no hook to return, no reason to re-engage, no sense that this tool will be useful tomorrow.</p>
-
-<h4>Output style</h4>
-<p>The output is a well-formatted static report. It's a better report than competitors produce — but it's still a report. The output paradigm is "here's what we found, take it or leave it." This is the exact output model that defines the generic resume-scanner category.</p>
-
-<h3>Three types of "generic" at play</h3>
-<table>
-  <tr><th>Type</th><th>Present?</th><th>Evidence</th></tr>
-  <tr><td>Generic because it <strong>looks</strong> like others</td><td><span class="tag tag-red">Yes</span></td><td>Dark theme, purple accents, score numbers, upload funnel — identical visual vocabulary to Jobscan/Resume Worded</td></tr>
-  <tr><td>Generic because it <strong>behaves</strong> like others</td><td><span class="tag tag-orange">Partially</span></td><td>Upload → wait → static results is the standard flow. But the results content is richer than competitors.</td></tr>
-  <tr><td>Generic because differentiation is <strong>hidden too late</strong></td><td><span class="tag tag-red">Yes</span></td><td>Multi-source matching, seniority calibration, domain fit, career trajectory — all hidden until post-analysis or buried in How It Works</td></tr>
+<tr><th>Objective</th><th>What Gets Done</th><th>Priority</th></tr>
+<tr><td><strong>1. Reframe the Homepage</strong></td><td>Replace scanner-category cues with market-position framing, pull the strongest differentiation line onto the homepage, fix the rendering void, remove the "0+ resumes analyzed" counter.</td><td>Critical</td></tr>
+<tr><td><strong>2. Add Real Customization to Upload</strong></td><td>Add optional target-role and target-industry inputs, show the system's detected resume attributes before analysis runs, fix the silent upload-failure error.</td><td>Critical</td></tr>
+<tr><td><strong>3. Surface Intelligence in Results</strong></td><td>Break the single match score into its skill / domain / seniority components, add basic filter controls, make the Insights tab functional, show the search-transparency data that already exists.</td><td>High</td></tr>
+<tr><td><strong>4. Clean Up Auth &amp; Onboarding</strong></td><td>Fix the <code>/signin</code> 404, preview the dashboard on the sign-up page, reconsider GitHub auth for a non-technical audience.</td><td>Medium</td></tr>
 </table>
 
 <hr>
 
-<!-- ============ PHASE 6 ============ -->
-<h2 id="phase6">Phase 6: Where Differentiation Does and Does Not Land</h2>
+<h2>Objective 1: Reframe the Homepage</h2>
+<p>The homepage's visual and verbal vocabulary, score numbers, an "analyze your resume" CTA, an upload funnel, places Seeker in the same category as Jobscan and Resume Worded before its own differentiation gets a chance to land.</p>
 
-<h3>What is actually unique about the product</h3>
-<ol>
-  <li><strong>Live multi-source job matching</strong> — not keyword scoring against one job description, but actual matching against thousands of live openings</li>
-  <li><strong>Three-axis scoring model</strong> (skill alignment + domain fit + seniority calibration) — more sophisticated than simple keyword overlap</li>
-  <li><strong>Per-role ATS readiness scores</strong> — showing not just fit but hireability per specific posting</li>
-  <li><strong>Search transparency</strong> — showing how the search was conducted, openings evaluated, domains covered</li>
-  <li><strong>Market position ranking</strong> — benchmarking against peers, not just against one job</li>
-  <li><strong>Privacy-first architecture</strong> — resume deleted after analysis, no data selling, no profile building</li>
-</ol>
-
-<h3>Where that uniqueness becomes visible</h3>
 <table>
-  <tr><th>Feature</th><th>First visible at</th><th>Too late?</th></tr>
-  <tr><td>Live job matching</td><td>Homepage subheadline (1 sentence)</td><td><span class="tag tag-orange">Easy to miss</span></td></tr>
-  <tr><td>Three-axis scoring</td><td>How It Works page only</td><td><span class="tag tag-red">Yes</span></td></tr>
-  <tr><td>Per-role ATS readiness</td><td>Results page only</td><td><span class="tag tag-red">Yes</span></td></tr>
-  <tr><td>Search transparency</td><td>How It Works page description only</td><td><span class="tag tag-red">Yes</span></td></tr>
-  <tr><td>Market position ranking</td><td>Homepage sample + results</td><td><span class="tag tag-orange">Somewhat</span></td></tr>
-  <tr><td>Privacy architecture</td><td>Upload page + FAQ</td><td><span class="tag tag-green">No — well placed</span></td></tr>
+<tr><th>Page Element</th><th>Current State</th><th>What to Change To</th></tr>
+<tr><td>Hero CTA</td><td>"Analyze your resume, free" reads as standard scanner-category language.</td><td>"See where you'd get hired" reframes the product as market intelligence, not scanning.</td></tr>
+<tr><td>Score display</td><td>Static numbers (76% / 12 matches / 91%) mimic the exact layout of Jobscan and Resume Worded.</td><td>A single sample match card with a real score breakdown, previewing the actual output format.</td></tr>
+<tr><td>Differentiation placement</td><td>The strongest comparison line ("Resume scanners tell you if your font is parseable, Seeker tells you where you'd actually get hired") is buried on the Compare page, which most visitors never open.</td><td>Pull that line onto the homepage, above the fold.</td></tr>
+<tr><td>Social proof counter</td><td>"0+ resumes analyzed" actively undercuts credibility.</td><td>Remove it, or replace with a real testimonial once the count is meaningful.</td></tr>
+<tr><td>Page rendering</td><td>A multi-viewport black void renders between the hero and the FAQ/CTA sections (content exists in the DOM but isn't visible).</td><td>Fix the underlying CSS or lazy-load issue causing the dead space.</td></tr>
 </table>
 
-<h3>At what point does the product stop feeling generic?</h3>
-<p><strong>At the results page</strong> — but only if you read carefully. The match cards with per-role gap analysis and ATS readiness scores are genuinely more useful than what competitors show. But by the time a reviewer gets there, they've already formed their category judgment based on 3+ pages of generic-coded marketing. The results would need to be dramatically, obviously different to override that first impression. They're better — but not dramatically, obviously different at a glance.</p>
+<h2>Objective 2: Add Real Customization to Upload</h2>
+<p>The upload flow gives the user exactly two inputs, city and a remote toggle, then infers everything else silently. The inference is sophisticated; the experience of it is not.</p>
 
-<p>The product's differentiation is real but <strong>never achieves escape velocity from the category it's trapped in</strong>. The reviewer sees "better resume scanner" rather than "new category of career tool."</p>
+<table>
+<tr><th>Page Element</th><th>Current State</th><th>What to Change To</th></tr>
+<tr><td>Targeting inputs</td><td>Only location and a remote-roles toggle. No target role, industry, seniority override, or salary preference.</td><td>Add two optional fields: target role title and target industry. Even where the system already infers these, letting the user state them builds a sense of control.</td></tr>
+<tr><td>System inference visibility</td><td>Seniority detection, domain weighting, and search expansion all happen invisibly.</td><td>Show a "We detected: Senior-level, Sales/Engineering domain, Sunnyvale market" summary before analysis, with the option to correct it.</td></tr>
+<tr><td>Upload error handling</td><td>Files near the 5MB limit fail silently with a bare "Upload failed" message and no size hint (likely a client/server body-limit mismatch).</td><td>Replace with a specific message: "File too large (max 4MB)" or a clear server-error message, and log the real HTTP status.</td></tr>
+</table>
 
-<hr>
+<h2>Objective 3: Surface Intelligence in Results</h2>
+<p>The results page is the most differentiated part of the product and the least visible. A reviewer who reaches it has already formed a "generic scanner" judgment from three prior pages of scanner-coded marketing.</p>
 
-<!-- ============ PHASE 7 ============ -->
-<h2 id="phase7">Phase 7: Hypotheses</h2>
+<table>
+<tr><th>Page Element</th><th>Current State</th><th>What to Change To</th></tr>
+<tr><td>Match score</td><td>Collapsed into one number ("89% match"), indistinguishable from a Jobscan keyword score.</td><td>Show the breakdown on each match card: Skill 92% / Domain 85% / Seniority 90%.</td></tr>
+<tr><td>Result controls</td><td>No filters, no sort, no drill-down; the page is read-only.</td><td>Add a minimum-score slider and a remote-only filter, minimal but enough to feel interactive.</td></tr>
+<tr><td>Insights tab (demo)</td><td>Non-functional; career trajectory and search transparency, the most differentiated outputs, are never seen.</td><td>Make the tab functional so reviewers can preview it before uploading.</td></tr>
+<tr><td>Search transparency</td><td>The system evaluates thousands of live openings across five sources, but never says so.</td><td>Add a "How we searched" line: "Evaluated 4,200 openings across Adzuna, USAJobs, Remotive, Jobicy, and Jooble." No backend change, the data already exists.</td></tr>
+</table>
 
-<div class="hypothesis card">
-<p class="hypothesis-title">H1: The homepage hero uses scanner category vocabulary, overriding the differentiation subheadline</p>
-<p><span class="tag tag-purple">Layer: Pre-auth homepage</span></p>
-<p><strong>Evidence:</strong> "Analyze your resume" CTA, score numbers (64/100, 91%), "skill gaps" — all standard scanner terminology. The one differentiating line ("matches you against live openings") is in smaller gray text below the hero.</p>
-<p><strong>Reviewer experience:</strong> Scanned the hero in 3 seconds, saw "analyze resume" + score numbers, mentally categorized as "another resume scanner."</p>
-<p><strong>Reviewer conclusion:</strong> "Generic — another resume scoring tool."</p>
-<p><strong>Test:</strong> A/B test hero that leads with "See which jobs you'd actually get" instead of "Find out why you're not getting interviews." Measure whether the "career intelligence" or "market position" framing changes first-impression categorization in 5-second tests.</p>
-</div>
+<h2>Objective 4: Clean Up Auth &amp; Onboarding</h2>
 
-<div class="hypothesis card">
-<p class="hypothesis-title">H2: The upload page offers only location + remote toggle, creating "limited customization" perception</p>
-<p><span class="tag tag-purple">Layer: Upload flow</span></p>
-<p><strong>Evidence:</strong> The only user inputs before analysis are: file, city, and a remote toggle. No target role, industry, seniority, salary, or preference inputs.</p>
-<p><strong>Reviewer experience:</strong> Dropped resume, saw auto-detected city, hit analyze. Had no ability to tell the system what they're looking for.</p>
-<p><strong>Reviewer conclusion:</strong> "Limited customization — the tool just does its thing with no regard for what I actually want."</p>
-<p><strong>Test:</strong> Add 1-2 optional input fields (target role title, target industry) before analysis. Measure whether perceived customization improves without impacting conversion.</p>
-</div>
-
-<div class="hypothesis card">
-<p class="hypothesis-title">H3: The three-axis scoring model is never shown to the user</p>
-<p><span class="tag tag-purple">Layer: Results</span></p>
-<p><strong>Evidence:</strong> The How It Works page explains skill alignment, domain fit, and seniority calibration. But the results page shows only a single combined score (e.g., 89% match). The user never sees how that 89% breaks down.</p>
-<p><strong>Reviewer experience:</strong> Saw "89% match" and thought "that's the same as Jobscan's score."</p>
-<p><strong>Reviewer conclusion:</strong> "Generic score — looks like every other tool."</p>
-<p><strong>Test:</strong> Show a mini-breakdown on each match card: Skill 92% / Domain 85% / Seniority 90%. Measure whether this changes the "generic score" perception.</p>
-</div>
-
-<div class="hypothesis card">
-<p class="hypothesis-title">H4: Results are read-only with no interactive controls</p>
-<p><span class="tag tag-purple">Layer: Results</span></p>
-<p><strong>Evidence:</strong> No filters, no sort options, no "show more like this," no drill-down on match cards, no "what-if" scenarios.</p>
-<p><strong>Reviewer experience:</strong> Got results, read them, had nothing to click or explore. The interaction ended.</p>
-<p><strong>Reviewer conclusion:</strong> "Limited customization — I can't do anything with these results."</p>
-<p><strong>Test:</strong> Add even basic filter controls (minimum score slider, domain filter, location filter). Measure engagement time and "limited customization" perception.</p>
-</div>
-
-<div class="hypothesis card">
-<p class="hypothesis-title">H5: The Insights tab is invisible or broken in the demo</p>
-<p><span class="tag tag-purple">Layer: Demo / Pre-auth results preview</span></p>
-<p><strong>Evidence:</strong> Clicking "Insights" tab on the demo page does not switch the view. The career trajectory and search transparency features — arguably the most differentiating outputs — are completely hidden.</p>
-<p><strong>Reviewer experience:</strong> Saw only the Matches view. Never encountered trajectory analysis or search transparency.</p>
-<p><strong>Reviewer conclusion:</strong> "The output is just match scores — same as everything else."</p>
-<p><strong>Test:</strong> Make Insights tab functional in demo. Measure whether reviewers who see the trajectory/transparency views rate the product as more differentiated.</p>
-</div>
-
-<div class="hypothesis card">
-<p class="hypothesis-title">H6: The system's intelligent inferences are invisible</p>
-<p><span class="tag tag-purple">Layer: Upload + Results</span></p>
-<p><strong>Evidence:</strong> Seeker auto-detects seniority level, domain expertise, and expands searches automatically. But none of this is communicated to the user. The user doesn't see "We detected you as a Senior-level candidate in the semiconductor/sales domain."</p>
-<p><strong>Reviewer experience:</strong> Uploaded resume, got results, never knew the system was making sophisticated inferences on their behalf.</p>
-<p><strong>Reviewer conclusion:</strong> "It just does a basic analysis — nothing special."</p>
-<p><strong>Test:</strong> Add a "What we found in your resume" section at the top of results showing detected seniority, domain, key skills. Give the user ability to correct/override. Measure impact on trust and perceived sophistication.</p>
-</div>
-
-<div class="hypothesis card">
-<p class="hypothesis-title">H7: The demo is behind a secondary CTA that most users skip</p>
-<p><span class="tag tag-purple">Layer: Pre-auth homepage</span></p>
-<p><strong>Evidence:</strong> "Preview the analysis first" is a ghost/outlined button next to the primary purple "Analyze your resume, free" CTA. Users who are scanning quickly will click the primary CTA and never see the demo results that would set better expectations.</p>
-<p><strong>Reviewer experience:</strong> Went straight to upload, skipped the demo, never saw what the results actually look like before uploading.</p>
-<p><strong>Reviewer conclusion:</strong> "I didn't know what to expect and the results felt like standard output."</p>
-<p><strong>Test:</strong> Embed a truncated version of the demo results directly on the homepage (not behind a click). Measure whether first-impression differentiation improves.</p>
-</div>
-
-<div class="hypothesis card">
-<p class="hypothesis-title">H8: The "0+ resumes analyzed" counter undermines credibility</p>
-<p><span class="tag tag-purple">Layer: Pre-auth homepage</span></p>
-<p><strong>Evidence:</strong> The social proof counter at the top of the homepage reads "0+ resumes analyzed" — signaling either very early stage or a bug. Combined with Product Hunt / TinyLaunch badges, it signals "untested beta" not "established tool."</p>
-<p><strong>Reviewer experience:</strong> Saw "0+" and immediately questioned whether the product is ready for real use.</p>
-<p><strong>Reviewer conclusion:</strong> "This feels like a half-baked side project, not a real product."</p>
-<p><strong>Test:</strong> Remove the counter until it shows a credible number (500+), or replace with a different social proof mechanism (testimonial, company logos).</p>
-</div>
-
-<div class="hypothesis card">
-<p class="hypothesis-title">H9: No "what-if" or iterative capability visible anywhere</p>
-<p><span class="tag tag-purple">Layer: Results + Post-auth</span></p>
-<p><strong>Evidence:</strong> The product is positioned as "career intelligence" but behaves as "one-shot report." There's no way to say "What if I added Kubernetes?" or "What if I targeted New York instead?" or "Re-run with different parameters."</p>
-<p><strong>Reviewer experience:</strong> Got one report, no way to refine or iterate.</p>
-<p><strong>Reviewer conclusion:</strong> "Limited customization — once you get results, that's it."</p>
-<p><strong>Test:</strong> Add a "What-if" button on skill gaps ("See how adding this skill would change your matches"). Even if it's a Pro feature, showing the option communicates depth.</p>
-</div>
-
-<div class="hypothesis card">
-<p class="hypothesis-title">H10: Privacy messaging takes up space that should show product depth</p>
-<p><span class="tag tag-purple">Layer: Pre-auth, all pages</span></p>
-<p><strong>Evidence:</strong> "Resume deleted after analysis" appears on every page, in every CTA area, and in the FAQ. Privacy is valuable but it's not a differentiator from the user's perspective — it's table stakes. Meanwhile, the unique three-axis scoring, multi-source aggregation, and career trajectory features get no homepage space.</p>
-<p><strong>Reviewer experience:</strong> "I know my data is safe. I still don't know why this tool is different."</p>
-<p><strong>Reviewer conclusion:</strong> "Privacy is nice but the tool itself seems generic."</p>
-<p><strong>Test:</strong> Reduce privacy messaging to one trust badge. Use recovered space to show the three-axis model or a mini-demo of career trajectory.</p>
-</div>
-
-<div class="hypothesis card">
-<p class="hypothesis-title">H11: The Compare page is excellent but nobody reads it</p>
-<p><span class="tag tag-purple">Layer: Pre-auth navigation</span></p>
-<p><strong>Evidence:</strong> The Compare page has the clearest differentiation messaging on the entire site: concrete comparisons, feature matrix, price comparisons. But it's behind a nav link that most first-time users won't click.</p>
-<p><strong>Reviewer experience:</strong> Never visited Compare. Went Homepage → Upload → Results → Left.</p>
-<p><strong>Reviewer conclusion:</strong> "Generic — I never saw what makes it different."</p>
-<p><strong>Test:</strong> Pull the strongest comparison points ("Resume scanners check formatting. Seeker analyzes market positioning.") onto the homepage above the fold.</p>
-</div>
-
-<div class="hypothesis card">
-<p class="hypothesis-title">H12: Free tier caps at "top 8 matches" and "1 analysis per week" creating a dead end</p>
-<p><span class="tag tag-purple">Layer: Results + Pricing</span></p>
-<p><strong>Evidence:</strong> Free shows top 8 matches (5 visible, 3 behind paywall tease), 1 analysis per week. Pro unlocks all matches, unlimited re-analyses, tailored resume/cover letter, interview prep per role.</p>
-<p><strong>Reviewer experience:</strong> Saw 5 matches, was told 3 more exist, hit a wall. No ability to iterate, refine, or go deeper without paying.</p>
-<p><strong>Reviewer conclusion:</strong> "The free version is a teaser, not a tool. Limited."</p>
-<p><strong>Test:</strong> Show all matches (not just 5) in free tier but gate the deep-dive features (tailored resume, cover letter, interview prep). This way the free product feels complete rather than truncated.</p>
-</div>
+<table>
+<tr><th>Page Element</th><th>Current State</th><th>What to Change To</th></tr>
+<tr><td>Sign-in URL</td><td><code>/signin</code> (no hyphen) 404s, with no redirect to the working <code>/sign-in</code> page.</td><td>Add the redirect. Trivial fix, currently embarrassing for a product with "Sign In" in the nav.</td></tr>
+<tr><td>Sign-up page</td><td>Promises "resume history" and "Pro features" with no preview of either.</td><td>Show a screenshot or mockup of the dashboard on the sign-up page.</td></tr>
+<tr><td>Auth options</td><td>GitHub auth signals a developer audience, which may confuse the broader non-technical job-seeker market.</td><td>Reconsider whether GitHub auth belongs here, or reserve it for a future developer-facing product surface.</td></tr>
+</table>
 
 <hr>
 
-<!-- ============ PHASE 8 ============ -->
-<h2 id="phase8">Phase 8: Severity Ranking</h2>
+<h2>Two Fixes to Ship First</h2>
 
-<div class="card severity-critical">
-<h4>1. Most likely cause of "generic" perception</h4>
-<p><strong>The homepage uses scanner-category visual and verbal vocabulary.</strong> Score numbers, "analyze your resume" CTA, dark theme with purple accents, upload funnel — every cue places the product in the resume-scanner category before the subheadline can argue otherwise. The differentiation (live market matching, three-axis scoring) is either invisible or buried in secondary pages.</p>
-<p><strong>Impact:</strong> This sets the mental model within 5 seconds. Everything after (upload, results) is filtered through "this is just another scanner" — making even genuinely differentiated outputs feel expected rather than novel.</p>
-</div>
+<table>
+<tr><th>Fix</th><th>Timeline</th></tr>
+<tr><td>Fix the <code>/signin</code> 404 and remove the "0+ resumes analyzed" counter.</td><td>Within 48 hours, both are trivial and require no backend change.</td></tr>
+<tr><td>Add the skill / domain / seniority score breakdown to match cards.</td><td>Within 1-2 weeks, the single highest-leverage change on this list.</td></tr>
+</table>
 
-<div class="card severity-critical">
-<h4>2. Most likely cause of "limited customization" perception</h4>
-<p><strong>The upload page has only 2 inputs (location + remote toggle) and results are fully static/read-only.</strong> The user has no way to shape the analysis, no way to filter/sort/refine results, and no way to iterate. The product does everything automatically, which is technically impressive but perceptually feels like the user has no control.</p>
-<p><strong>Impact:</strong> This is the single most concrete, defensible criticism a reviewer can make. It's true: there are almost zero user-facing customization controls.</p>
-</div>
-
-<div class="card severity-high">
-<h4>3. Most likely issue in pre-auth</h4>
-<p><strong>The demo page (primary proof point) is behind a secondary CTA and its Insights tab is non-functional.</strong> The demo is the one pre-auth opportunity to show the product's depth. But most users skip it, and those who find it only see the Matches view. The career trajectory and search transparency features — the most differentiating outputs — remain invisible.</p>
-<p><strong>Impact:</strong> Users go from homepage → upload → results with zero preview of what makes the product special, forming low expectations that color their entire experience.</p>
-</div>
-
-<div class="card severity-high">
-<h4>4. Most likely issue in post-auth</h4>
-<p><strong>The three-axis scoring model is collapsed into a single number.</strong> The user sees "89% match" but never sees that it's composed of skill alignment, domain fit, and seniority calibration. This makes the score indistinguishable from Jobscan's keyword-overlap score.</p>
-<p><strong>Impact:</strong> The most technically differentiating aspect of the scoring model is invisible in the output, making the results feel like "same thing, different coat of paint."</p>
-</div>
-
-<div class="card severity-high">
-<h4>5. Most likely issue in results/output</h4>
-<p><strong>No interactive controls on the results page.</strong> No filters, no sort, no drill-down, no "what-if." The results are a static report that ends the user's session rather than beginning an ongoing relationship with the tool.</p>
-<p><strong>Impact:</strong> The product feels like a one-shot tool rather than a platform. There's no reason to return, no reason to upgrade, and no sense that this tool offers anything beyond a single report.</p>
-</div>
-
-<hr>
-
-<!-- ============ PHASE 9 ============ -->
-<h2 id="phase9">Phase 9: High-Leverage Fixes (No Backend Rebuild Required)</h2>
-
-<h3>Homepage Fixes</h3>
-<div class="card">
-<ol>
-  <li><strong>Reframe the hero from "analyze your resume" to "see your market position."</strong> Replace "Analyze your resume, free" with "See where you'd get hired →" or "Find your strongest job matches →". This shifts the mental model from "scanner" to "market intelligence."</li>
-  <li><strong>Replace the sample score display with a mini-demo of the match card format.</strong> Instead of showing "76% / 12 matches / 91% top match" as static numbers, show a single interactive-looking match card with the company, role, score breakdown (Skill/Domain/Seniority), and gap analysis. This previews the unique output format.</li>
-  <li><strong>Pull the Compare page's best line onto the homepage:</strong> "Resume scanners tell you if your font is parseable. Seeker tells you that adding 'Kubernetes' to your resume would match you with 4 more Senior DevOps roles at $180K+ companies." This is the single most compelling differentiation statement on the entire site and it's buried on a page most users never visit.</li>
-  <li><strong>Remove or replace the "0+ resumes analyzed" counter.</strong> It actively hurts credibility. Replace with a specific testimonial or remove until the number is meaningful.</li>
-  <li><strong>Fix the massive rendering void</strong> between the hero section and the FAQ/CTA sections. This is likely a CSS animation or lazy-loading issue creating screens of dead black space.</li>
-</ol>
-</div>
-
-<h3>Auth / Onboarding Fixes</h3>
-<div class="card">
-<ol>
-  <li><strong>Fix the /signin 404.</strong> Add a redirect from <code>/signin</code> to <code>/sign-in</code>. Trivial but the current state is embarrassing for a product that shows "Sign In" in the nav.</li>
-  <li><strong>Show a dashboard preview on the sign-up page.</strong> The current sign-up page just says "Save your results, track your resume history, and unlock Pro features." Show a screenshot or mockup of what the dashboard actually looks like.</li>
-  <li><strong>Consider removing GitHub auth</strong> unless the target audience is developers. For a career tool targeting the general job-seeker market, GitHub auth is confusing noise.</li>
-</ol>
-</div>
-
-<h3>Post-Auth / Upload Flow Fixes</h3>
-<div class="card">
-<ol>
-  <li><strong>Add 1-2 optional targeting inputs on the upload page.</strong> A "Target role (optional)" text field and a "Target industry (optional)" dropdown would dramatically increase perceived customization with minimal backend change. Even if the system already infers these, letting the user <em>state</em> them creates a sense of control and validates the system's inference.</li>
-  <li><strong>Show detected resume attributes before analysis starts.</strong> After upload but before analysis, show: "We detected: Senior-level candidate, Sales/Engineering domain, Sunnyvale market." Let the user confirm or correct. This surfaces the system's intelligence and creates a collaborative feeling rather than a black-box one.</li>
-  <li><strong>Fix the upload error message.</strong> Replace "Upload failed" with context-specific messages: "File too large (max 4MB)" or "Upload failed (server error) — please try again." Include the HTTP status in analytics tracking.</li>
-</ol>
-</div>
-
-<h3>Results Page Fixes</h3>
-<div class="card">
-<ol>
-  <li><strong>Show the three-axis score breakdown on each match card.</strong> Replace the single "89% match" with a mini-breakdown: "Skills 92% · Domain 85% · Level 90%". This is the single highest-leverage change to combat "generic score" perception.</li>
-  <li><strong>Add basic filter controls.</strong> Even a "Minimum fit score" slider and a "Remote only" toggle on the results page would transform it from a static report to an interactive tool.</li>
-  <li><strong>Make the Insights tab work in the demo.</strong> If career trajectory and search transparency are real features, they need to be visible in the demo. These are the most differentiated outputs and they're currently invisible.</li>
-  <li><strong>Show search transparency in results.</strong> Add a small "How we searched" callout: "Evaluated 4,200 openings across Adzuna, USAJobs, Remotive, Jobicy, and Jooble. Expanded to remote roles based on limited local supply." This is free differentiation — no backend change needed, just surface the data that already exists.</li>
-  <li><strong>Add a "What-if" teaser.</strong> On each skill gap, add a ghosted/locked "See impact" link with tooltip: "Pro: See how adding this skill changes your matches." Even locked, this communicates that the product has depth beyond the free report.</li>
-</ol>
-</div>
+<h2>What Not to Fix Right Now</h2>
+<p><strong>Backend or matching-logic rebuild:</strong> none of the fixes above touch the aggregation, scoring, or matching engine. This is a presentation problem, not a product problem.</p>
+<p><strong>Full visual redesign:</strong> the dark theme itself isn't the issue, the scanner-category cues layered on top of it are. This calls for reframing, not rebranding.</p>
 
 <hr>
 
 <h2>Summary: The Core Diagnosis</h2>
 <div class="card severity-critical">
-<p>Seeker is a career intelligence tool trapped in the body of a resume scanner. It has real technical differentiation — multi-source live job matching, three-axis scoring, seniority calibration, search transparency — but wraps all of it in the visual language, interaction model, and marketing vocabulary of the exact category it claims to transcend.</p>
-
-<p>The product's sophistication is entirely server-side and invisible. The user's experience is: upload file → wait → read static report. This is indistinguishable from Jobscan or Resume Worded at a behavioral level, even if the output is richer.</p>
-
-<p>The fix is not to rebuild the backend. The fix is to <strong>make the intelligence visible</strong>: show the three-axis score breakdown, surface the search strategy, expose the system's inferences for user validation, add minimal interactive controls, and reframe the marketing from "analyze your resume" to "see your market position." The product needs to look as smart as it actually is.</p>
+<p>Seeker is a career intelligence tool wrapped in the visual language and interaction model of a resume scanner. The technical differentiation is real, live multi-source matching, three-axis scoring, search transparency, but it stays server-side and invisible until deep in the funnel, if it surfaces at all.</p>
+<p>None of the four objectives above require rebuilding what the product does. They require making visible what it already does.</p>
 </div>
 
-<p style="color: var(--muted); margin-top: 2rem; font-size: 0.85rem;">Audit conducted April 16, 2026 via live browsing session. All findings based on actual product interaction, not assumptions. Demo page used as proxy for post-auth results experience due to file upload sandbox constraints.</p>
+<p class="signature">Carlos Munoz &nbsp;|&nbsp; Marketing Strategy &amp; Growth Analytics Lead &nbsp;|&nbsp; Seeker<br>Audit conducted April 16, 2026, via live browsing session. Demo page used as a proxy for the post-auth results experience due to file-upload sandbox constraints.</p>
 
 </body>
 </html>

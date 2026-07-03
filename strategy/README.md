@@ -9,7 +9,7 @@ These three documents map to a simple sequence: diagnose, plan, execute. The pro
 | File | Description |
 |---|---|
 | `email-marketing-strategy-v2.docx` | Email Marketing Strategy v2.0, an event-driven model. Moves from time-based sends to triggers tied to real user and product events, across four lifecycle segments: New User, Active Searcher, Returning User, and Long-Term Dormant. Built for the Resend platform. |
-| `upload-page-conversion-audit.html` / `.pdf` | SeekerScore.com Critical Product Audit. A nine-phase audit of the resume upload page covering first impression, value proposition, user journey, differentiation, and severity-ranked fixes. |
+| `upload-page-conversion-audit.html` / `.pdf` | SeekerScore.com Conversion Audit & Action Plan. Diagnoses why the product reads as a generic resume scanner and lays out four prioritized objectives, each with a current-state-to-target fix table, to close that gap without a backend rebuild. |
 | `outreach-tracker-tool.jsx` | React component built to log and track outreach across Reddit, X, LinkedIn, blog placements, and product directories, with a daily progress goal and a Sent, Replied, Converted, No Response status pipeline. |
 
 ## Notes
