@@ -132,6 +132,16 @@ seeker-marketing-strategy/
 └── README.md
 ```
 
+| Folder | Contents |
+|---|---|
+| [`content/linkedin`](content/linkedin/README.md) | Post graphics for the LinkedIn calendar |
+| [`content/x-twitter`](content/x-twitter/README.md) | Post graphics and video for the X calendar |
+| [`content/reddit`](content/reddit/README.md) | Organic post and comment copy (pending export) |
+| [`paid-ads/reddit`](paid-ads/reddit/README.md) | Campaign exports, performance data, and ad creative previews |
+| [`visuals/api-mockup`](visuals/api-mockup/README.md) | Developer-facing API visuals (pending export) |
+| [`visuals/social-graphics`](visuals/social-graphics/README.md) | Blog launch graphic, logo mark, beta ad video |
+| [`strategy`](strategy/README.md) | Email strategy, product audit, outreach tracking tool |
+
 Every folder has its own `README.md` explaining what it contains and why, including an honest note where a folder is still empty.
 
 ---
