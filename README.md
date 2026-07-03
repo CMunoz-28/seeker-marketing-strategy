@@ -106,6 +106,7 @@ All content is built around five proprietary data pillars that only Seeker can p
 ## Results
 
 - Grew platform from 81 to 98+ registered users
+- Ranked #1 Product of the Month on PeerPush
 - Established presence on LinkedIn, X, and Reddit from zero
 - Built and launched Google Search and Reddit Ads campaigns
 - Developed full email marketing strategy (event-driven, 4-segment model)
