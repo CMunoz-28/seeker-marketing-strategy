@@ -12,6 +12,10 @@ By June, targeting had narrowed to a single US, tech-adjacent audience ("Job See
 |---|---|
 | `reddit-ads-bulk-export.csv` | Full campaign, ad group, and ad structure export. Includes the three June ad variants below, plus the two earlier May 2026 test campaigns described above. |
 | `reddit-ads-performance-jun-9-15-2026.csv` | One-week performance snapshot for the "SEEKER - Traffic - Jun 2026" campaign: 18,443 impressions, 99 clicks, 0.54% CTR, $127.31 spent. |
+| `ad-preview-variant-a-pain-point.png` | Reddit Ads Manager preview of Variant A, "Find out why you're not getting interviews," including the underlying creative image. |
+| `ad-preview-variant-b-credibility.png` | Reddit Ads Manager preview of Variant B, "Stop applying blind. See where you rank first." |
+| `ad-preview-variant-c-social-proof.png` | Reddit Ads Manager preview of Variant C, "10,000+ resumes analyzed. See where yours ranks." |
+| `ad-preview-may-2026-traffic-ad.png` | Reddit Ads Manager preview of the earlier May 2026 Traffic Ad, including the trust-badge-heavy creative described below. |
 
 ## Ad variants tested
 
