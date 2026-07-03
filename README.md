@@ -56,7 +56,7 @@ As Marketing Strategy & Growth Analytics Lead, I own positioning, messaging, dis
 | CPC | $1.29 |
 | Amount spent | $127.31 |
 
-Full export: [reddit-ads-performance-jun-9-15-2026.csv](ads/reddit/reddit-ads-performance-jun-9-15-2026.csv)
+Full export: [reddit-ads-performance-jun-9-15-2026.csv](paid-ads/reddit/reddit-ads-performance-jun-9-15-2026.csv)
 
 **Ad variants tested:**
 
@@ -66,7 +66,7 @@ Full export: [reddit-ads-performance-jun-9-15-2026.csv](ads/reddit/reddit-ads-pe
 | B, Credibility | Stop applying blind. See where you rank first. | Learn More |
 | C, Social Proof | 10,000+ resumes analyzed. See where yours ranks. | Learn More |
 
-Full campaign export: [reddit-ads-bulk-export.csv](ads/reddit/reddit-ads-bulk-export.csv)
+Full campaign export: [reddit-ads-bulk-export.csv](paid-ads/reddit/reddit-ads-bulk-export.csv)
 
 ---
 
