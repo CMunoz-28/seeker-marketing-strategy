@@ -144,7 +144,7 @@ seeker-marketing-strategy/
 | [`visuals/social-graphics`](visuals/social-graphics/README.md) | Blog launch graphic, logo mark, beta ad video |
 | [`strategy`](strategy/README.md) | Email strategy, product audit, outreach tracking tool |
 
-Every folder has its own `README.md` explaining what it contains and why, including an honest note where a folder is still empty.
+Every folder has its own `README.md` explaining what it contains and why, including an honest note anywhere content is still partial.
 
 ---
 
