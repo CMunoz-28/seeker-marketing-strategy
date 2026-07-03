@@ -19,6 +19,16 @@ Seeker is a career intelligence platform that analyzes resumes against 160,000+ 
 
 As Marketing Strategy & Growth Analytics Lead, I own positioning, messaging, distribution execution, ad strategy, and analytics interpretation across all channels.
 
+## Official Channels & Listings
+
+| Type | Channel | Link |
+|---|---|---|
+| Social | LinkedIn | [linkedin.com/company/seeker-career-intelligence](https://www.linkedin.com/company/seeker-career-intelligence) |
+| Social | X / Twitter | [x.com/SeekerScore](https://x.com/SeekerScore) |
+| Credibility | Product Hunt | [producthunt.com/products/seeker-7](https://www.producthunt.com/products/seeker-7) |
+| Credibility | PeerPush | [peerpush.com/p/seeker-or-career-routing-engine](https://peerpush.com/p/seeker-or-career-routing-engine) |
+| Credibility | NXGN Tools | [nxgntools.com/tools/seeker](https://www.nxgntools.com/tools/seeker) |
+
 ---
 
 ## Scope of Work
