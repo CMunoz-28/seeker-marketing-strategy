@@ -6,7 +6,9 @@
 # Seeker: Marketing Strategy & Growth
 
 **Role:** Marketing Strategy & Growth Analytics Lead
+
 **Platform/Project:** [Seeker | AI Career Routing Engine](https://seekerscore.com)
+
 **Status:** Active, Ongoing
 
 ---
