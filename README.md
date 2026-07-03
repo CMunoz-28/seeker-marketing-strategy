@@ -129,7 +129,7 @@ seeker-marketing-strategy/
 ├── paid-ads/
 │   └── reddit/            Campaign exports, performance data, and ad creative previews
 ├── visuals/
-│   ├── api-mockup/        Developer-facing API visuals (pending export)
+│   ├── api-mockup/        Ray.so-style API request/response mockup
 │   └── social-graphics/   Blog launch graphic, logo mark, beta ad video
 ├── strategy/               Email strategy, product audit, outreach tracking tool
 └── README.md
@@ -141,7 +141,7 @@ seeker-marketing-strategy/
 | [`content/x-twitter`](content/x-twitter/README.md) | Post graphics and video for the X calendar |
 | [`content/reddit`](content/reddit/README.md) | Reddit profile banner (post/comment copy pending export) |
 | [`paid-ads/reddit`](paid-ads/reddit/README.md) | Campaign exports, performance data, and ad creative previews |
-| [`visuals/api-mockup`](visuals/api-mockup/README.md) | Developer-facing API visuals (pending export) |
+| [`visuals/api-mockup`](visuals/api-mockup/README.md) | Ray.so-style API request/response mockup |
 | [`visuals/social-graphics`](visuals/social-graphics/README.md) | Blog launch graphic, logo mark, beta ad video |
 | [`strategy`](strategy/README.md) | Email strategy, product audit, outreach tracking tool |
 
