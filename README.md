@@ -45,6 +45,19 @@ As Marketing Strategy & Growth Analytics Lead, I own positioning, messaging, dis
 | BetaList | Active | Paid placement |
 | PeerPush | Active | Paid placement |
 
+### Reddit Ads Performance (Jun 9 to 15, 2026)
+
+| Metric | Value |
+|---|---|
+| Campaign | SEEKER - Traffic - Jun 2026 |
+| Impressions | 18,443 |
+| Clicks | 99 |
+| CTR | 0.54% |
+| CPC | $1.29 |
+| Amount spent | $127.31 |
+
+Full export: [reddit-ads-performance-jun-9-15-2026.csv](ads/reddit/reddit-ads-performance-jun-9-15-2026.csv)
+
 ---
 
 ## Content Strategy
