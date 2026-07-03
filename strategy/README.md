@@ -1,6 +1,8 @@
 # Strategy
 
-Planning documents, audits, and internal tools that supported the marketing and growth work.
+## Overview
+
+These three documents map to a simple sequence: diagnose, plan, execute. The product audit came first, in April 2026, and surfaced why users were dropping off before ever uploading a resume, weak trust signals, an unclear value proposition, and generic-feeling positioning. Its findings directly shaped the pivot documented in the email strategy: move away from generic time-based nurture emails toward messages that only fire when something real changed for the user, since sending mail for the sake of a schedule was part of the same trust problem the audit flagged. The outreach tracker is the operational layer underneath both, the tool actually used to log and follow up on distribution work (Reddit threads, backlink targets, content placements) instead of losing it in a spreadsheet nobody reopens.
 
 ## Contents
 
