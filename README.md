@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="visuals/social-graphics/seeker-logo-icon.png" width="120" alt="Seeker logo">
-</p>
-
 ![Role](https://img.shields.io/badge/Role-Marketing%20Strategy%20%26%20Growth-blue)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Focus](https://img.shields.io/badge/Focus-Career%20Intelligence%20Platform-orange)
@@ -22,6 +18,9 @@
 Seeker is a career intelligence platform that analyzes resumes against 160,000+ live job postings to return a market percentile, best-fit roles, and skill gap analysis. It is free, requires no signup, and deletes resumes after analysis.
 
 As Marketing Strategy & Growth Analytics Lead, I own positioning, messaging, distribution execution, ad strategy, and analytics interpretation across all channels.
+<p align="left">
+  <img src="visuals/social-graphics/seeker-logo-icon.png" width="200" alt="Seeker logo">
+</p>
 
 ## Official Channels & Listings
 
