@@ -115,6 +115,27 @@ All content is built around five proprietary data pillars that only Seeker can p
 
 ---
 
+## Repository Structure
+
+```
+seeker-marketing-strategy/
+├── content/
+│   ├── linkedin/          Post graphics for the LinkedIn calendar
+│   ├── x-twitter/         Post graphics and video for the X calendar
+│   └── reddit/            Organic post and comment copy (pending export)
+├── paid-ads/
+│   └── reddit/            Campaign exports, performance data, and ad creative previews
+├── visuals/
+│   ├── api-mockup/        Developer-facing API visuals (pending export)
+│   └── social-graphics/   Blog launch graphic, logo mark, beta ad video
+├── strategy/               Email strategy, product audit, outreach tracking tool
+└── README.md
+```
+
+Every folder has its own `README.md` explaining what it contains and why, including an honest note where a folder is still empty.
+
+---
+
 ## Tools & Stack
 
 | Tool | Purpose |
