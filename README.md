@@ -58,6 +58,16 @@ As Marketing Strategy & Growth Analytics Lead, I own positioning, messaging, dis
 
 Full export: [reddit-ads-performance-jun-9-15-2026.csv](ads/reddit/reddit-ads-performance-jun-9-15-2026.csv)
 
+**Ad variants tested:**
+
+| Variant | Headline | CTA |
+|---|---|---|
+| A, Pain Point | Find out why you're not getting interviews | Learn More |
+| B, Credibility | Stop applying blind. See where you rank first. | Learn More |
+| C, Social Proof | 10,000+ resumes analyzed. See where yours ranks. | Learn More |
+
+Full campaign export: [reddit-ads-bulk-export.csv](ads/reddit/reddit-ads-bulk-export.csv)
+
 ---
 
 ## Content Strategy
@@ -85,7 +95,7 @@ All content is built around five proprietary data pillars that only Seeker can p
 - X content calendar (ongoing)
 - Reddit organic comment templates
 - Google Search ad copy (15 headlines, 4 descriptions)
-- Reddit ad copy (2 variants: pain point and credibility)
+- Reddit ad copy (3 variants: pain point, credibility, and social proof)
 
 ### Strategy
 - Email marketing strategy v2.0 (event-driven model)
