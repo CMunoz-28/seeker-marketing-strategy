@@ -106,7 +106,7 @@ All content is built around five proprietary data pillars that only Seeker can p
 ### Copy
 - LinkedIn content calendar (ongoing)
 - X content calendar (ongoing)
-- Reddit organic comment templates
+- Reddit organic post and comment engagement (daily cadence, copy pending export, see content/reddit)
 - Google Search ad copy (15 headlines, 4 descriptions)
 - Reddit ad copy (3 variants: pain point, credibility, and social proof)
 
