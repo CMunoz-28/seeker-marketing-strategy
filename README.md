@@ -113,8 +113,7 @@ All content is built around five proprietary data pillars that only Seeker can p
 ### Strategy
 - Email marketing strategy v2.0 (event-driven model)
 - Upload page conversion audit (funnel and UX diagnosis)
-- Channel overview and distribution plan
-- Competitive positioning framework
+- Channel and distribution strategy (see Channels above)
 
 ---
 
