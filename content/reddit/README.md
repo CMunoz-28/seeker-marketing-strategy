@@ -15,7 +15,8 @@ This is a deliberately different posture from [`paid-ads/reddit`](../../paid-ads
 | File | Description |
 |---|---|
 | `reddit-profile-banner.jpg` | Community banner used on Seeker's Reddit profile, sized to Reddit's banner spec. |
+| `organic-posts-log.md` | Paraphrased log of 6 live organic posts across r/Pro_ResumeHelp, r/careerguidance, r/microsaas, r/careeradvice, and r/jobsearch, with links to each original thread. |
 
 ## Status
 
-Organic post and comment copy is still pending. It exists in live Reddit threads and prior conversation history, but hasn't been exported into standalone files yet.
+Organic posting is active and documented in `organic-posts-log.md`, including two posts that were removed by their subreddits, kept in the log rather than hidden.

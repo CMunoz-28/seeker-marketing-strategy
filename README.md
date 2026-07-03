@@ -106,7 +106,7 @@ All content is built around five proprietary data pillars that only Seeker can p
 ### Copy
 - LinkedIn content calendar (ongoing)
 - X content calendar (ongoing)
-- Reddit organic post and comment engagement (daily cadence, copy pending export, see content/reddit)
+- Reddit organic post log (6 posts across r/Pro_ResumeHelp, r/careerguidance, r/microsaas, and more, see content/reddit)
 - Google Search ad copy (campaign paused, folder removed until Google Ads work resumes, see Channels above)
 - Reddit ad copy (3 variants: pain point, credibility, and social proof)
 
@@ -124,7 +124,7 @@ seeker-marketing-strategy/
 ├── content/
 │   ├── linkedin/          Post graphics for the LinkedIn calendar
 │   ├── x-twitter/         Post graphics and video for the X calendar
-│   └── reddit/            Reddit profile banner (post/comment copy pending export)
+│   └── reddit/            Profile banner and a log of 6 live organic posts
 ├── paid-ads/
 │   └── reddit/            Campaign exports, performance data, and ad creative previews
 ├── visuals/
@@ -138,13 +138,13 @@ seeker-marketing-strategy/
 |---|---|
 | [`content/linkedin`](content/linkedin/README.md) | Post graphics for the LinkedIn calendar |
 | [`content/x-twitter`](content/x-twitter/README.md) | Post graphics and video for the X calendar |
-| [`content/reddit`](content/reddit/README.md) | Reddit profile banner (post/comment copy pending export) |
+| [`content/reddit`](content/reddit/README.md) | Profile banner and a log of 6 live organic posts |
 | [`paid-ads/reddit`](paid-ads/reddit/README.md) | Campaign exports, performance data, and ad creative previews |
 | [`visuals/api-mockup`](visuals/api-mockup/README.md) | Ray.so-style API request/response mockup |
 | [`visuals/social-graphics`](visuals/social-graphics/README.md) | Blog launch graphic, logo mark, beta ad video |
 | [`strategy`](strategy/README.md) | Email strategy, product audit, outreach tracking tool |
 
-Every folder has its own `README.md` explaining what it contains and why, including an honest note anywhere content is still partial.
+Every folder has its own `README.md` explaining what it contains and why.
 
 ---
 
