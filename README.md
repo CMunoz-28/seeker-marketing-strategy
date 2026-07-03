@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="visuals/social-graphics/seeker-logo-icon.png" width="120" alt="Seeker logo">
+</p>
+
 ![Role](https://img.shields.io/badge/Role-Marketing%20Strategy%20%26%20Growth-blue)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Focus](https://img.shields.io/badge/Focus-Career%20Intelligence%20Platform-orange)
