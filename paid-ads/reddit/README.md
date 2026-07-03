@@ -15,13 +15,17 @@ By June, targeting had narrowed to a single US, tech-adjacent audience ("Job See
 
 ## Ad variants tested
 
-| Variant | Headline | CTA |
-|---|---|---|
-| A, Pain Point | Find out why you're not getting interviews | Learn More |
-| B, Credibility | Stop applying blind. See where you rank first. | Learn More |
-| C, Social Proof | 10,000+ resumes analyzed. See where yours ranks. | Learn More |
+| Variant | Headline | CTA | Lands on |
+|---|---|---|---|
+| A, Pain Point | Find out why you're not getting interviews | Learn More | Homepage |
+| B, Credibility | Stop applying blind. See where you rank first. | Learn More | Homepage |
+| C, Social Proof | 10,000+ resumes analyzed. See where yours ranks. | Learn More | Upload page |
 
-The performance snapshot above is reported at the campaign level, not broken out per variant, since that split wasn't available in the export.
+The performance snapshot above is reported at the campaign level, not broken out per variant, since that split wasn't available in the export. Variant C is the only one that skips the homepage and routes straight into the upload flow, a deliberate test of whether a stat-led hook can justify shortening the funnel by one step.
+
+## May 2026 test creative
+
+The earlier "Traffic Campaign 2026-05-16" ad, "Stop applying blind. Discover roles that match your background.", used a heavier trust-and-proof-driven creative rather than a single hook line. The image copy leaned on privacy and scale claims (deleted after analysis, private by default, never shared or sold, 160,000+ live openings searched, 1,200+ skills tracked) plus a row of "Featured on" badges: Product Hunt, BetaList, PeerPush (Product of the Week), NXGN Tools, and KrispiTech. By June, that approach was replaced with the three shorter, single-angle variants above, a simplification worth noting as part of the creative evolution.
 
 ## Status
 
