@@ -6,6 +6,12 @@ Reddit organic is where Seeker earns trust before it ever asks for anything. Car
 
 This is a deliberately different posture from [`paid-ads/reddit`](../../paid-ads/reddit), which runs the same platform as a paid, scaled channel. Organic and paid are treated as separate workstreams with separate goals: organic builds credibility one thread at a time, paid tests whether that same positioning converts at volume.
 
+## Contents
+
+| File | Description |
+|---|---|
+| `reddit-profile-banner.jpg` | Community banner used on Seeker's Reddit profile, sized to Reddit's banner spec. |
+
 ## Status
 
-Empty for now. This copy exists in live Reddit threads and prior conversation history, but hasn't been exported into standalone files yet.
+Organic post and comment copy is still pending. It exists in live Reddit threads and prior conversation history, but hasn't been exported into standalone files yet.
