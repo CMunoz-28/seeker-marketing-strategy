@@ -4,6 +4,10 @@
 
 Not everything fits neatly into a single platform's weekly content calendar. This folder holds the visuals that support the brand more broadly rather than one scheduled post: the push that announced the Seeker blog, the standalone logo mark reused wherever a clean brand asset is needed, and a beta product video ad that doesn't belong to any one platform's slot.
 
+## Preview
+
+<img src="blog-launch-announcement.png" width="260" alt="Most Candidates Find Out Too Late"> <img src="seeker-logo-icon.png" width="140" alt="Seeker logo mark">
+
 ## Contents
 
 | File | Description |

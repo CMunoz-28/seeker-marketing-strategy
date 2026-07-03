@@ -4,6 +4,10 @@
 
 X is the fast, high-frequency counterpart to LinkedIn. It carries the same core ideas but in tighter copy, posted five days a week instead of three because the platform rewards frequency over polish. It's also where Seeker talks to developers directly, which is why the beta API announcement lives here rather than in a generic graphics folder: developers are a meaningfully different audience than job seekers, and X is where they're most reachable.
 
+## Preview
+
+<img src="find-the-roles-you-actually-compete-for.png" width="320" alt="Find the Roles You Actually Compete For"> <img src="find-the-role-you-were-built-for-stat.png" width="320" alt="Find the Role You Were Built For, 92% stat">
+
 ## Contents
 
 | File | Funnel stage | Description |

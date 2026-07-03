@@ -6,6 +6,10 @@ The two exports here capture a real optimization loop, not a single static campa
 
 By June, targeting had narrowed to a single US, tech-adjacent audience ("Job Seekers - Tech - US"), and spend was split across three ad variants testing three different psychological angles at once: pain point, credibility, and social proof. That June campaign is the one reported in the main [README's](../../README.md) Channels table and the performance summary below.
 
+## Preview
+
+<img src="ad-preview-variant-a-pain-point.png" width="220" alt="Variant A, Pain Point ad preview"> <img src="ad-preview-variant-b-credibility.png" width="220" alt="Variant B, Credibility ad preview"> <img src="ad-preview-variant-c-social-proof.png" width="220" alt="Variant C, Social Proof ad preview"> <img src="ad-preview-may-2026-traffic-ad.png" width="220" alt="May 2026 Traffic Ad preview">
+
 ## Contents
 
 | File | Description |

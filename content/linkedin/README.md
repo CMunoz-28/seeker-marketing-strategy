@@ -6,6 +6,10 @@ LinkedIn is Seeker's highest-intent channel. The audience skews toward employed 
 
 The three posts here aren't random content, they form a small arc: introduce the mechanism (fit over keywords), give a reason to act right now (a rank-based hook), then hand off to owned content for anyone not ready to upload a resume yet.
 
+## Preview
+
+<img src="job-matching-reinvented.png" width="240" alt="Job Matching, Reinvented"> <img src="ai-powered-matching.png" width="240" alt="Stop Applying Blind. See Exactly Where You Rank First."> <img src="how-many-jobs-should-you-apply-to.png" width="240" alt="How Many Jobs Should You Actually Apply To?">
+
 ## Contents
 
 | File | Funnel stage | Description |
