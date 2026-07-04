@@ -8,7 +8,9 @@ By June, targeting had narrowed to a single US, tech-adjacent audience ("Job See
 
 ## Preview
 
-<img src="ad-preview-variant-a-pain-point.png" width="220" alt="Variant A, Pain Point ad preview"> <img src="ad-preview-variant-b-credibility.png" width="220" alt="Variant B, Credibility ad preview"> <img src="ad-preview-variant-c-social-proof.png" width="220" alt="Variant C, Social Proof ad preview"> <img src="ad-preview-may-2026-traffic-ad.png" width="220" alt="May 2026 Traffic Ad preview">
+<img src="ad-preview-variant-a-pain-point.png" width="260" alt="Variant A, Pain Point ad preview"> <img src="ad-preview-variant-b-credibility.png" width="260" alt="Variant B, Credibility ad preview"> <img src="ad-preview-variant-c-social-proof.png" width="260" alt="Variant C, Social Proof ad preview"> <img src="ad-preview-may-2026-traffic-ad.png" width="260" alt="May 2026 Traffic Ad preview">
+
+Cropped to the rendered ad card itself, since the raw Ads Manager screenshots are mostly editor chrome. Full uncropped screenshots (campaign tree, form fields, optimization score) are kept below as backup evidence.
 
 ## Contents
 
@@ -16,10 +18,14 @@ By June, targeting had narrowed to a single US, tech-adjacent audience ("Job See
 |---|---|
 | `reddit-ads-bulk-export.csv` | Full campaign, ad group, and ad structure export. Includes the three June ad variants below, plus the two earlier May 2026 test campaigns described above. |
 | `reddit-ads-performance-jun-9-15-2026.csv` | One-week performance snapshot for the "SEEKER - Traffic - Jun 2026" campaign: 18,443 impressions, 99 clicks, 0.54% CTR, $127.31 spent. |
-| `ad-preview-variant-a-pain-point.png` | Reddit Ads Manager preview of Variant A, "Find out why you're not getting interviews," including the underlying creative image. |
-| `ad-preview-variant-b-credibility.png` | Reddit Ads Manager preview of Variant B, "Stop applying blind. See where you rank first." |
-| `ad-preview-variant-c-social-proof.png` | Reddit Ads Manager preview of Variant C, "10,000+ resumes analyzed. See where yours ranks." |
-| `ad-preview-may-2026-traffic-ad.png` | Reddit Ads Manager preview of the earlier May 2026 Traffic Ad, including the trust-badge-heavy creative described below. |
+| `ad-preview-variant-a-pain-point.png` | Cropped preview of Variant A, "Find out why you're not getting interviews," showing the rendered ad card. |
+| `ad-preview-variant-b-credibility.png` | Cropped preview of Variant B, "Stop applying blind. See where you rank first." |
+| `ad-preview-variant-c-social-proof.png` | Cropped preview of Variant C, "10,000+ resumes analyzed. See where yours ranks." |
+| `ad-preview-may-2026-traffic-ad.png` | Cropped preview of the earlier May 2026 Traffic Ad, including the trust-badge-heavy creative described below. |
+| `ad-preview-variant-a-pain-point-full.png` | Full, uncropped Reddit Ads Manager screenshot for Variant A. |
+| `ad-preview-variant-b-credibility-full.png` | Full, uncropped Reddit Ads Manager screenshot for Variant B. |
+| `ad-preview-variant-c-social-proof-full.png` | Full, uncropped Reddit Ads Manager screenshot for Variant C. |
+| `ad-preview-may-2026-traffic-ad-full.png` | Full, uncropped Reddit Ads Manager screenshot for the May 2026 Traffic Ad. |
 
 ## Ad variants tested
 
