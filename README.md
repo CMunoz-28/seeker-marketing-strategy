@@ -23,8 +23,6 @@ Seeker is a career intelligence platform that analyzes resumes against live job 
 
 I contributed to and supported Seeker's marketing execution: creating content and visuals, assisting with campaign support and outreach, posting on organic channels, and helping organize and document marketing materials.
 
-I did not own Seeker's overall growth strategy, company positioning, business direction, final decisions, or end-to-end growth outcomes. Those are set by the Seeker team. This repository documents my individual contributions only, not a claim of founder-level, equity-level, or full ownership of Seeker's growth.
-
 ## Official Channels & Listings
 
 | Type | Channel | Link |
