@@ -21,7 +21,9 @@ Seeker is a career intelligence platform that analyzes resumes against live job 
   <img src="visuals/social-graphics/seeker-logo-icon.png" width="200" alt="Seeker logo">
 </p>
 
-I support Seeker's marketing execution: writing and designing content, posting on organic channels, and helping organize marketing assets. Positioning, growth strategy, channel strategy, ad strategy, and business decisions are set by the Seeker team, this repository documents my individual contributions, not Seeker's broader strategy.
+I contributed to and supported Seeker's marketing execution: creating content and visuals, assisting with campaign support and outreach, posting on organic channels, and helping organize and document marketing materials.
+
+I did not own Seeker's overall growth strategy, company positioning, business direction, final decisions, or end-to-end growth outcomes. Those are set by the Seeker team. This repository documents my individual contributions only, not a claim of founder-level, equity-level, or full ownership of Seeker's growth.
 
 ## Official Channels & Listings
 
@@ -37,10 +39,10 @@ I support Seeker's marketing execution: writing and designing content, posting o
 
 ## Scope of Work
 
-- Writing and designing LinkedIn and X post graphics and copy
-- Posting organic content on Reddit
-- Supporting developer-facing visual assets
-- Organizing and documenting marketing materials
+- Created marketing content and visuals for LinkedIn and X
+- Assisted with organic outreach on Reddit
+- Supported developer-facing visual assets
+- Helped organize and document marketing materials
 
 ---
 
@@ -95,4 +97,4 @@ Every folder has its own `README.md` explaining what it contains.
 
 ---
 
-*Portfolio repository documenting my individual content and execution contributions to Seeker. Seeker's growth metrics, campaign performance, positioning, and growth strategy are proprietary to Seeker and are not included here.*
+*Portfolio repository documenting my individual content, execution, and support contributions to Seeker. It does not represent ownership of Seeker's growth strategy, positioning, business decisions, or outcomes, those belong to the Seeker team. Seeker's growth metrics, campaign performance, positioning, and growth strategy are proprietary to Seeker and are not included here.*
