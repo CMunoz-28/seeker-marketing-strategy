@@ -39,6 +39,7 @@ I contributed to and supported Seeker's marketing execution: creating content an
 
 - Created marketing content and visuals for LinkedIn and X
 - Assisted with organic outreach on Reddit
+- Supported outreach research and organization
 - Supported developer-facing visual assets
 - Helped organize and document marketing materials
 
@@ -67,6 +68,7 @@ seeker-marketing-strategy/
 │   ├── linkedin/          Post graphics for LinkedIn
 │   ├── x-twitter/         Post graphics and video for X
 │   └── reddit/            Profile banner and a log of organic posts
+├── outreach/               Outreach research overview and wave tracking template
 ├── visuals/
 │   ├── api-mockup/        Ray.so-style API request/response mockup
 │   └── social-graphics/   Blog launch graphic, logo mark, beta ad video
@@ -78,6 +80,7 @@ seeker-marketing-strategy/
 | [`content/linkedin`](content/linkedin/README.md) | Post graphics for LinkedIn |
 | [`content/x-twitter`](content/x-twitter/README.md) | Post graphics and video for X |
 | [`content/reddit`](content/reddit/README.md) | Profile banner and a log of organic posts |
+| [`outreach`](outreach/README.md) | Outreach research overview and wave tracking template |
 | [`visuals/api-mockup`](visuals/api-mockup/README.md) | Ray.so-style API request/response mockup |
 | [`visuals/social-graphics`](visuals/social-graphics/README.md) | Blog launch graphic, logo mark, beta ad video |
 
