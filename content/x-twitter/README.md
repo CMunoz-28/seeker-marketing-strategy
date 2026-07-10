@@ -14,3 +14,4 @@ Post graphics and video I created for Seeker's X presence.
 |---|---|
 | `find-the-roles-you-actually-compete-for.png` | "Find the Roles You Actually Compete For." |
 | `beta-api-announcement.mp4` | Video post announcing the Beta API. |
+| `post-copy-log.md` | Confirmed post copy (hook, body, hashtags, CTA) for 5 published X posts. |

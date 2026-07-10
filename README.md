@@ -56,8 +56,8 @@ Between February and July 2026, I contributed to and supported Seeker's marketin
 - Supporting brand and social graphics
 
 ### Copy
-- LinkedIn posts
-- X posts
+- LinkedIn posts (7 published, see [`content/linkedin`](content/linkedin/README.md) for the full copy log)
+- X posts (5 published, see [`content/x-twitter`](content/x-twitter/README.md) for the full copy log)
 - Organic Reddit posts (see [`content/reddit`](content/reddit/README.md) for a log with links to the live threads)
 
 ---
