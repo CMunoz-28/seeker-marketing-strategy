@@ -17,4 +17,4 @@ Organic posts and a profile banner I contributed on Seeker's behalf in career-re
 
 ## Status
 
-Posting is active and documented in `organic-posts-log.md`, including posts that were removed by their subreddits, kept in the log rather than hidden.
+Posting has concluded and is documented in `organic-posts-log.md`, including posts that were removed by their subreddits, kept in the log rather than hidden.

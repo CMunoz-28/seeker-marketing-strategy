@@ -1,5 +1,5 @@
 ![Role](https://img.shields.io/badge/Role-Marketing%20Content%20%26%20Execution%20Support-blue)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![Status](https://img.shields.io/badge/Status-Completed-lightgrey)
 ![Focus](https://img.shields.io/badge/Focus-Career%20Intelligence%20Platform-orange)
 ![Tools](https://img.shields.io/badge/Tools-Buffer%20%7C%20Canva%20%7C%20Ray.so-lightgrey)
 
@@ -9,7 +9,7 @@
 
 **Platform/Project:** [Seeker | AI Career Routing Engine](https://seekerscore.com)
 
-**Status:** Active, Ongoing
+**Status:** Completed
 
 ---
 
@@ -21,7 +21,7 @@ Seeker is a career intelligence platform that analyzes resumes against live job 
   <img src="visuals/social-graphics/seeker-logo-icon.png" width="200" alt="Seeker logo">
 </p>
 
-I contributed to and supported Seeker's marketing execution: creating content and visuals, assisting with campaign support and outreach, posting on organic channels, and helping organize and document marketing materials.
+Between February and July 2026, I contributed to and supported Seeker's marketing execution: created content and visuals, assisted with campaign support and outreach, posted on organic channels, and helped organize and document marketing materials. This engagement has concluded, and I am no longer working on or supporting Seeker.
 
 ## Official Channels & Listings
 
@@ -42,6 +42,8 @@ I contributed to and supported Seeker's marketing execution: creating content an
 - Supported outreach research and organization
 - Supported developer-facing visual assets
 - Helped organize and document marketing materials
+
+*All work above reflects a completed engagement (Feb to Jul 2026).*
 
 ---
 
@@ -98,4 +100,4 @@ Every folder has its own `README.md` explaining what it contains.
 
 ---
 
-*Portfolio repository documenting my individual content, execution, and support contributions to Seeker. It does not represent ownership of Seeker's growth strategy, positioning, business decisions, or outcomes, those belong to the Seeker team. Seeker's growth metrics, campaign performance, positioning, and growth strategy are proprietary to Seeker and are not included here.*
+*Portfolio repository documenting a completed engagement: my individual content, execution, and support contributions to Seeker. It does not represent ownership of Seeker's growth strategy, positioning, business decisions, or outcomes, those belong to the Seeker team. Seeker's growth metrics, campaign performance, positioning, and growth strategy are proprietary to Seeker and are not included here. I am no longer working on or supporting Seeker.*
