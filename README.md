@@ -62,6 +62,12 @@ Between February and July 2026, I contributed to and supported Seeker's marketin
 
 ---
 
+## Content Format
+
+Across LinkedIn and X, posts followed a consistent structure: a short, direct hook, a two-to-three sentence body, and a closing question or call to action. LinkedIn posts ran longer and more reflective; X posts stayed shorter and single-idea. Posting was scheduled through Buffer. Full post-by-post copy is in each platform's folder README.
+
+---
+
 ## Repository Structure
 
 ```
