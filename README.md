@@ -23,6 +23,12 @@ Seeker is a career intelligence platform that analyzes resumes against live job 
 
 Between February and July 2026, I contributed to and supported Seeker's marketing execution: created content and visuals, assisted with campaign support and outreach, posted on organic channels, and helped organize and document marketing materials. This engagement has concluded, and I am no longer working on or supporting Seeker.
 
+## The Platform
+
+<img src="visuals/api-mockup/seeker-api-screenshot.png" width="700" alt="Seeker matching API — structured career intelligence built for AI agents">
+
+Seeker's matching API returns structured, explainable career intelligence from a resume — ranked job matches, the reasoning behind each one, and the exact skill gaps that would cause rejection. One call against 200,000+ live roles.
+
 ## Official Channels & Listings
 
 | Type | Channel | Link |
@@ -78,7 +84,7 @@ seeker-marketing-strategy/
 │   └── reddit/            Profile banner and a log of organic posts
 ├── outreach/               Outreach research overview and wave tracking template
 ├── visuals/
-│   ├── api-mockup/        Ray.so-style API request/response mockup
+│   ├── api-mockup/        Seeker API screenshot and Ray.so-style mockup
 │   └── social-graphics/   Blog launch graphic, logo mark, beta ad video
 └── README.md
 ```
@@ -89,7 +95,7 @@ seeker-marketing-strategy/
 | [`content/x-twitter`](content/x-twitter/README.md) | Post graphics and video for X |
 | [`content/reddit`](content/reddit/README.md) | Profile banner and a log of organic posts |
 | [`outreach`](outreach/README.md) | Outreach research overview and wave tracking template |
-| [`visuals/api-mockup`](visuals/api-mockup/README.md) | Ray.so-style API request/response mockup |
+| [`visuals/api-mockup`](visuals/api-mockup/README.md) | Seeker API screenshot and Ray.so-style mockup |
 | [`visuals/social-graphics`](visuals/social-graphics/README.md) | Blog launch graphic, logo mark, beta ad video |
 
 Every folder has its own `README.md` explaining what it contains.
